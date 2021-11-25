@@ -1,0 +1,46 @@
+.our_service {
+  height: 1000px;
+  background-image: url(../img/our_service_bg.jpg);
+  background-size: cover;
+  padding: 100px 0;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    .title {
+      font-size: 95px;
+    }
+    .card_wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 90px 30px;
+      margin-top: 50px;
+      & > div {
+        display: flex;
+
+        .card_text {
+          @include bhover(#424448);
+          cursor: default !important;
+          flex-grow: 3;
+          width: 20%;
+          font-size: 15px;
+          padding: 20px;
+          background-color: #ea202e;
+          color: #fff;
+          h1 {
+            margin-bottom: 20px;
+            transition: 0.5s ease;
+            &:hover {
+              cursor: pointer;
+              color: #ea202e;
+            }
+          }
+          p {
+            line-height: 30px;
+            font-size: 18px;
+            color: #fbfbfb;
+          }
+        }
+      }
+    }
+  }
+}

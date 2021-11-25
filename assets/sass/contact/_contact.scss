@@ -1,0 +1,48 @@
+.forms {
+  background-color: #2c2d2e;
+  padding: 100px 0;
+  .title {
+    font-size: 50px;
+  }
+  .form_inside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    .form_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      iframe {
+      }
+      color: #fff;
+
+      a {
+        padding: 10px 0;
+        display: inline-block;
+      }
+    }
+    .form_right {
+      input {
+        width: 100%;
+        background-color: #494a4b;
+        padding: 20px;
+        margin: 10px 0;
+        border: none;
+        color: #fff;
+      }
+      textarea {
+        width: 100%;
+        background-color: #494a4b;
+        padding: 20px;
+        margin: 10px 0;
+        border: none;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .button {
+        @include bhover(#ea202e);
+        display: inline-block;
+      }
+    }
+  }
+}

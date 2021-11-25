@@ -1,0 +1,32 @@
+.best_service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .best_img {
+    background-image: url(../img/best_service.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: top center;
+   
+  }
+  .text_page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ea202e;
+    flex-direction: column;
+    height: 710px;
+    padding: 150px 0;
+    p {
+      font-weight: 300;
+    }
+    .title {
+      font-size: 5vw;
+    }
+    .button {
+      @include bhover(#2c2d2e);
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

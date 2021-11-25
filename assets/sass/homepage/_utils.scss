@@ -1,0 +1,60 @@
+@mixin hover($color) {
+  &:hover {
+    color: $color;
+  }
+}
+.active {
+  color: #b2222d !important;
+}
+.title {
+  font-size: 10vw;
+  color: #fff;
+  text-align: center;
+  font-weight: 100;
+  span {
+    font-weight: 600;
+  }
+  & + p {
+    text-align: center;
+    color: #c9c9ca;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400 !important;
+  }
+}
+
+.button {
+  padding: 25px 45px;
+  font-weight: 600;
+  color: #fff;
+}
+@mixin bhover($color) {
+  transition: 0.5s;
+  &:hover {
+    background-color: $color;
+    cursor: pointer;
+  }
+}
+.red {
+  background-color: #ea202e;
+}
+.white {
+  background-color: #fff;
+  color: #000;
+}
+.dark {
+  background-color: #4c4e50;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.selected {
+  background-color: #ea202e;
+  color: #fff;
+  border: 2px solid #ea202e !important;
+}
+.checked {
+  background-color: #ea202e;
+  color: #fff;
+}

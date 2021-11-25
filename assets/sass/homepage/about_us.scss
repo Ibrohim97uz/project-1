@@ -1,0 +1,18 @@
+.about_us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c2d2e;
+  flex-direction: column;
+  height: 710px;
+  padding: 150px 0;
+  p {
+    font-weight: 300;
+  }
+  .title {
+    font-size: 5vw;
+  }
+  .button {
+    @include bhover(#2c2d2e);
+  }
+}

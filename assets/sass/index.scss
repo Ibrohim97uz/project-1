@@ -1,0 +1,26 @@
+@import "./homepage/utils";
+@import "./homepage/reset";
+@import "./homepage/nav";
+@import "./homepage/showcase";
+@import "./homepage/about_us";
+@import "./homepage/best_services";
+@import "./homepage/guarantee";
+@import "./homepage/advantages.scss";
+@import "./homepage/our_service.scss";
+@import "./homepage/clients_say.scss";
+@import "footer";
+@import "./services/_services.scss";
+@import "./prices/price.scss";
+@import "./blog/blog.scss";
+@import "./contact/contact";
+@import "media";
+.nav_list_burger {
+  display: none !important;
+}
+
+.reverse {
+  flex-direction: row-reverse !important;
+  @media (max-width: 1134px) {
+    flex-direction: row !important;
+  }
+}
